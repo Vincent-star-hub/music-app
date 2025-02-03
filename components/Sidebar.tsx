@@ -174,7 +174,7 @@ export default function Sidebar() {
         </AnimatePresence>
 
         {/* Recent Playlists */}
-        <div className="space-y-2 overflow-y-auto max-h-[calc(100vh-380px)] scrollbar-hide">
+        <div className="space-y-2 overflow-y-hidden overflow-x-hidden max-h-[calc(100vh-380px)] scrollbar-hide">
           {recentPlaylists.map((playlist) => (
             <motion.div
               key={playlist.id}
@@ -218,7 +218,6 @@ export default function Sidebar() {
           </motion.div>
         )}
       </AnimatePresence>
-
       {/* Toggle Button */}
       <button
         onClick={toggleSidebar}
