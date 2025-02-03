@@ -5,7 +5,7 @@ interface SignUpModalProps {
   closeModal: () => void;
 }
 
-export default function SignUpModal({ isOpen, closeModal }: SignUpModalProps) {
+const SignUpModal: React.FC<SignUpModalProps> = ({ isOpen, closeModal }) => {
   if (!isOpen) return null;
 
   return (
@@ -46,4 +46,6 @@ export default function SignUpModal({ isOpen, closeModal }: SignUpModalProps) {
       </motion.div>
     </div>
   );
-}
+};
+
+export default SignUpModal;

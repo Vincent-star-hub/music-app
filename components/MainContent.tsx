@@ -147,7 +147,7 @@ export default function MainContent() {
           className="text-3xl font-bold text-white mb-6 flex items-center gap-2"
         >
           <PlayCircle className="text-green-400" />
-          Editor's Picks
+          Editor&lsquo;s Picks
         </motion.h2>
         <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {editorPlaylists.map((playlist) => (

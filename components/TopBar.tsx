@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export default function TopBar() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-  const [notifications, setNotifications] = useState([
+  const [notifications] = useState([
     {
       id: 1,
       text: "New Release: Latest album from your favorite artist",

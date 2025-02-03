@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
-export default function LoginModal({ isOpen, closeModal }) {
+interface LoginModalProps {
+  isOpen: boolean;
+  closeModal: () => void;
+}
+
+const LoginModal: React.FC<LoginModalProps> = ({ isOpen, closeModal }) => {
   if (!isOpen) return null;
 
   return (
@@ -41,4 +46,6 @@ export default function LoginModal({ isOpen, closeModal }) {
       </motion.div>
     </div>
   );
-}
+};
+
+export default LoginModal;
